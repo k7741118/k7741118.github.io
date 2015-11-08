@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jump for Joy</title>
+    <link href="styles/my_style.css" rel="stylesheet">
+    <script src="scripts/jquery-1.6.2.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script>
+    $(document).ready(function()) {
+        $("button").click(function()) {
+            $("h1").hide("slow");
+            $("h2").slow("fast");
+            $("img").sileUp();
+        };
+    };
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <h2>Jump for Joy Sale</h2>
+    </div>
+    <div id="main">
+        <div class="guess_box"><img src="images/jump1.jpg" /></div>
+        <div class="guess_box"><img src="images/jump2.jpg" /></div>
+        <div class="guess_box"><img src="images/jump3.jpg" /></div>
+        <div class="guess_box"><img src="images/jump4.jpg" /></div>
+    </div>
+    <!--<script>
+    $(document).ready(function() {
+        $(".guess_box").click(function() {
+            // $(".guess_box p").remove();
+            var discount = Math.floor((Math.random() * 6)) + 5;
+            var discount_msg = "<p>Your Discount is " + discount + "%</p>";
+            // alert("discountMsg");
+            //$(".guess_box").append(discount_msg);
+            $(this).append(discount_msg);
+            $(".guess_box").each(function() {
+                $(this).unbind("click");
+            });
+
+
+        });
+
+    });
+    // $(".guess_box").click(function() {
+
+    //     alert("You rang?");
+
+    // });
+    </script>
+    -->
+</body>
+
+</html>
